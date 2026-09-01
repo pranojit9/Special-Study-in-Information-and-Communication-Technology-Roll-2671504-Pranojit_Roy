@@ -1,126 +1,69 @@
-# 🧬 Disease Prediction with Logistic Regression and SVM
+# 🧬 Disease Prediction using Machine Learning
 
 ## 📌 Project Overview
 
-This project focuses on **breast cancer disease prediction** using the **Breast Cancer Wisconsin (Diagnostic) Dataset**.
+This project focuses on **disease prediction using machine learning** with the **Breast Cancer Wisconsin (Diagnostic) Dataset**.
 
-Two machine learning classification models are implemented and compared:
+The main objective of this project is to preprocess a real-world medical dataset, implement different machine learning classification algorithms, evaluate their performance using multiple metrics, and compare the results.
+
+Three machine learning classification models are implemented:
 
 - 📊 Logistic Regression
+- 🌳 Random Forest
 - 🎯 Support Vector Machine (SVM)
 
-The models are evaluated using **Accuracy, Precision, Recall/Sensitivity, and Specificity**.
+The models are evaluated using:
+
+- Accuracy
+- Precision
+- Recall
+- F1-score
+- Specificity
+- Confusion Matrix
+- Classification Report
 
 ---
 
-## 🧬 Dataset
+## 🎯 Assignment Objectives
 
-**Dataset:** Breast Cancer Wisconsin (Diagnostic)  
-**Source:** Scikit-learn Built-in Dataset
+The project follows the requirements of the **Disease Prediction using Machine Learning** assignment.
 
-- **Samples:** 569
-- **Features:** 30 numerical features
-- **Classification:** Binary Classification
-- **0 → Benign**
-- **1 → Malignant**
+Students will learn how to:
 
-The features represent measurements calculated from digitized images of breast masses.
-
----
-
-## ⚙️ Project Workflow
-
-1. Load the medical dataset
-2. Check missing values
-3. Split data into training and testing sets
-4. Apply `StandardScaler`
-5. Train Logistic Regression
-6. Train SVM with RBF kernel
-7. Generate predictions
-8. Visualize confusion matrices
-9. Compare model performance
+1. Preprocess real-world medical datasets.
+2. Apply machine learning classification algorithms.
+3. Train and test multiple machine learning models.
+4. Collect and compare evaluation metrics.
+5. Visualize model performance.
+6. Report findings in a structured format.
 
 ---
 
-## 📊 Evaluation Metrics
+# 🧬 Dataset
 
-- **Accuracy:** Overall percentage of correct predictions.
-- **Precision:** Correctness of positive predictions.
-- **Recall/Sensitivity:** Ability to detect actual disease cases.
-- **Specificity:** Ability to correctly identify non-disease cases.
+## Breast Cancer Wisconsin (Diagnostic) Dataset
 
----
+The **Breast Cancer Wisconsin (Diagnostic) Dataset** is used for this project.
 
-## 🛠 Technologies Used
+**Dataset Source:** Scikit-learn Built-in Dataset
 
-- Python
-- Pandas
-- NumPy
-- Scikit-learn
-- Matplotlib
-- Seaborn
-- Google Colab
+The dataset contains measurements calculated from digitized images of breast masses.
 
----
+### Dataset Information
 
-## 🎯 Conclusion
+| Property | Value |
+|---|---:|
+| Dataset | Breast Cancer Wisconsin (Diagnostic) |
+| Samples | 569 |
+| Features | 30 |
+| Feature Type | Numerical |
+| Problem Type | Binary Classification |
+| Classes | 2 |
 
-This project demonstrates the use of **Logistic Regression and SVM** for breast cancer classification. The models are compared using multiple evaluation metrics.
+### Target Classes
 
-The project can be extended toward **Federated AI for Healthcare**, where models can be trained across multiple hospitals while keeping patient data locally stored.
+The target variable is converted into:
 
----
-
-# 📝 Short Notes
-
-## 1. Function of Scikit-learn Models
-
-### Logistic Regression
-
-1. Used for binary classification.
-2. Predicts the probability of a class.
-3. Suitable for disease prediction.
-4. In this project, it predicts **Benign vs. Malignant**.
-
-### SVM (Support Vector Machine)
-
-1. Used for classification problems.
-2. Finds an optimal decision boundary between classes.
-3. RBF kernel can handle nonlinear data.
-4. In this project, it classifies breast tumors.
-
----
-
-## 2. Visualizing the Confusion Matrix
-
-1. Shows correct and incorrect model predictions.
-2. Contains **True Positive, True Negative, False Positive, and False Negative** values.
-3. Helps identify false positive and false negative cases.
-4. A heatmap makes the classification results easier to understand.
-
----
-
-## 3. Evaluation Metrics (Model Evaluation)
-
-1. **Accuracy** measures the overall percentage of correct predictions.
-2. **Precision** measures the correctness of positive predictions.
-3. **Recall/Sensitivity** measures the ability to detect actual disease cases.
-4. **Specificity** measures the ability to correctly identify non-disease cases.
-
----
-
-## 4. Linear Regression
-
-1. Linear Regression is a supervised machine learning algorithm.
-2. It is mainly used to predict continuous numerical values.
-3. It models the relationship between input and output variables.
-4. It is different from Logistic Regression, which is mainly used for classification.
-
----
-
-## 5. SVM
-
-1. SVM stands for **Support Vector Machine**.
-2. It finds an optimal decision boundary between different classes.
-3. The **RBF kernel** can handle nonlinear relationships in data.
-4. In this project, SVM is used for **Benign and Malignant tumor classification**.
+```text
+0 = Benign
+1 = Malignant
